@@ -1,5 +1,13 @@
+.DS_Store
 .buildpath
 .project
-.DS_Store
+.externalToolBuilders
+.settings
+
 config.php
 admin/config.php
+
+# Following is ignored in the spefic folders using a .gitignore hack that ensures the folder stays, but files in it is ignored
+# system/cache/*
+# system/logs/*
+# image/cache/*
