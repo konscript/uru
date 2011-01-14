@@ -1,0 +1,18 @@
+Version: 0.1 alpha
+
+Webshop for URU Diamonds, built on OpenCart - a PHP-based webshop CMS.
+Developed by Konscript (http://konscript.com)
+
+*Contributors:*
+S¿ren Louv-Jansen and Lasse Boisen Andersen perform as both core developers and coordinators.
+
+*Requirements:*
+Preferably PHP5 and MySQL on an Apache server with mod_rewrite enabled
+
+*Installation:*
+1. Download/fork/fetch the full repository from GitHub
+2. Create a MySQL database from scheme: db.sql
+3. Change the following value in DB to reflect current site URL
+	Table: setting
+	Entry: config_url
+4. Change configuration settings in config.php and admin/config.php (if needed)
