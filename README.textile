@@ -11,7 +11,7 @@ Preferably PHP5 and MySQL on an Apache server with mod_rewrite enabled
 
 *Installation:*
 1. Download/fork/fetch the full repository from GitHub
-2. Create a MySQL database from scheme: db.sql
+2. Create a MySQL database from scheme: db-schema.default.sql
 3. Change the following value in DB to reflect current site URL
 	Table: setting
 	Entry: config_url
