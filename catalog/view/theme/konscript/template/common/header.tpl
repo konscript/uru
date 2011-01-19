@@ -61,7 +61,8 @@ $(document).ready(function() {
     </div>
     <div class="div3">
 	      <div class="div7">
-	        <?php if ($currencies) { ?>
+	      	<?php // Disabled the currency picker ?>
+	        <?php if ($currencies == 1337) { ?>
 	        <form action="<?php echo str_replace('&', '&amp;', $action); ?>" method="post" enctype="multipart/form-data" id="currency_form">
 	          <div class="switcher">
 	            <?php foreach ($currencies as $currency) { ?>
@@ -81,7 +82,8 @@ $(document).ready(function() {
 	          </div>
 	        </form>
 	        <?php } ?>
-	        <?php if ($languages) { ?>
+	        <?php // Disabled the language picker ?>
+	        <?php if ($languages == 1337) { ?>
 	        <form action="<?php echo str_replace('&', '&amp;', $action); ?>" method="post" enctype="multipart/form-data" id="language_form">
 	          <div class="switcher">
 	            <?php foreach ($languages as $language) { ?>
@@ -116,9 +118,10 @@ $(document).ready(function() {
           </div>
           <div class="div10">&nbsp;&nbsp;<a onclick="moduleSearch();"><img src="catalog/view/theme/konscript/image/search.png"/></a> <a href="<?php echo str_replace('&', '&amp;', $advanced); ?>"></a></div>
         </div>   
-    </div>
+    </div>    
+    
 <div id="mainMenu">
-	<a href="index.php?route=common/home">HOME</a>
+	<a href="index.php?route=common/home">Home</a>
 	<a href="index.php?route=account/login">Log in</a>
 	<a href="index.php?route=account/account">Account</a>
 	<a href="index.php?route=checkout/cart">Basket</a>
@@ -133,8 +136,9 @@ $(document).ready(function() {
      	<?php 
      		$route = isset($_GET["route"]) ? $_GET["route"] : false;
 			if(!$route || $route=="common/home"){
+			// Disabled the header image slider
 		?>
-		
+<!-- 
 		<div id="slider">
 			<ul>								
 				<li><a href=""><img src="catalog/view/theme/<?php echo $template; ?>/image/diamond7.jpg" alt="Css Template Preview" /></a></li>
@@ -146,7 +150,7 @@ $(document).ready(function() {
 				<li><a href=""><img src="catalog/view/theme/<?php echo $template; ?>/image/diamond3.jpg" alt="Css Template Preview" /></a></li>		
 			</ul>
 		</div>		
-			
+-->			
 		<?php } ?>
     </div>
   </div>
