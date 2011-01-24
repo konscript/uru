@@ -56,16 +56,20 @@ p {
 	-webkit-box-shadow: 0px 0px 28px #000;
 	border-radius: 5px;	
 }
-#header {position:relative;margin-bottom:20px;height:130px;}
+#header {
+	position: relative;
+	margin-bottom: 20px;
+	height: 130px;
+	margin-right: 20px; }
+
 #header #logo {
 	padding-top: 15px;
-	padding-left: 15px;
-}
+	padding-left: 30px; }
 
 #headerCart{
 	position:absolute;
-	top: 10px;
-	right:30px;	
+	top: 20px;
+	right: 0;	
 }
 
 #headerCart a {
@@ -75,7 +79,10 @@ p {
 	font-weight: bold;
 	text-align:right;	
 }
-#headerCart span { text-align:right;}
+#headerCart span { 
+	margin-top: 5px;
+	display: block;
+	text-align:right; }
 	
 	
 
@@ -83,7 +90,7 @@ p {
 #categoryMenu {
 	position: absolute;
 	bottom: 0px;
-	right: 20px;
+	right: 0;
 }
 #categoryMenu ul{list-style-type:none;}	
 #categoryMenu li{	
@@ -91,7 +98,6 @@ p {
 	margin-left: 10px;		
 }
 #categoryMenu a{
-	text-transform: uppercase;
 	font-size: 1.4em;
 }
 
@@ -140,14 +146,14 @@ p {
 	border-radius: 5px 0 0 0;	
 	background-color: #222;
 	width: 5px;
-	height: 34px;
+	height: 38px;
 	float: left;
 }
 #content .top .right {
 	border-radius: 0 5px 0 0;
 	background-color: #222;	
 	width: 5px;	
-	height: 34px;
+	height: 38px;
 	float: right;
 }
 
@@ -157,7 +163,7 @@ p {
 	margin-right: 5px;
 }
 #content .top h1, .heading {
-	padding: 8px 0px 8px 7px;
+	padding: 12px 0px 8px 7px;
 }
 #content h1, .heading {
 	color: #fff;
@@ -182,7 +188,7 @@ p {
 	background-color: #222;
 }
 .box .top {
-	padding: 8px 0px 8px 7px;
+	padding: 12px 0px 12px 12px;
 	color: #ddd;
 	font-size: 14px;
 	font-weight: bold;
@@ -197,7 +203,7 @@ p {
 	margin-right: 5px;	
 }
 .box .middle {
-	padding: 10px;
+	padding: 0 12px 12px 12px;
 }
 .box .bottom {
 	height: 5px;
@@ -311,7 +317,7 @@ p {
 
 .list td a img {
 	border: 1px solid #666;
-	background-color: #444;
+/*	background-color: #444; */
 	padding: 2px;	
 }	
 .list td a img:hover {
@@ -432,8 +438,8 @@ p {
 #information ul {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	margin-left: 8px;
-	padding-left: 12px;
+	margin-left: 0;
+	padding-left: 0;
 	list-style: none;
 }
 .cart {
