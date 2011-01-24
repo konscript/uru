@@ -4,18 +4,17 @@ html {
 	padding: 0;
 }
 * {
-	font-family: Cochin, Arial, Helvetica, sans-serif;
+		font-family:Cochin, "Times New Roman",Georgia,Serif;		
 }
 body {
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
-/*	background-color: #454545;	*/
-	background-color: #000;
+	background-color: #000;	
 	color: #fff;
 }
 body, td, th, input, textarea, select, a {
-	font-size: 13px;
+	font-size: 12px;
 }
 form {
 	padding: 0;
@@ -57,80 +56,43 @@ p {
 	-webkit-box-shadow: 0px 0px 28px #000;
 	border-radius: 5px;	
 }
-#header .div2 {
-	float: left;
+#header {position:relative;margin-bottom:20px;height:130px;}
+#header #logo {
 	padding-top: 15px;
 	padding-left: 15px;
-	padding-bottom: 10px;
-}
-#header .div3 {
-	float: right;
-	padding-top: 7px;
-	height: 38px;
 }
 
-/** currency  **/
-#header .div7 {
-	float: left;
+#headerCart{
+	position:absolute;
+	top: 10px;
+	right:30px;	
 }
 
-#search {
-	float:left;
-	padding-left: 5px;
+#headerCart a {
+	text-transform: uppercase;	
+	display:block;
+	font-size:1.1em;
+	font-weight: bold;
+	text-align:right;	
 }
-.switcher {
-	float: right;	
-	margin-left: 10px;
-}
-.switcher a {
-	text-decoration: none;
-	display: block;
-}
-.switcher .selected {
-	background: #FFFFFF;
-}
-.switcher .selected a {
-	background: url('../image/arrow_down.png') 116px center no-repeat;
-
-	width: 121px;
-}
-.switcher .selected:hover {
-	border: 1px solid #888;
-}
-.switcher .option {	
-	position: absolute;
-	z-index: 3;
-	border: 1px solid #555;
-	border-top: none;
-	display: none;
-	width: 131px;
-}
-.switcher .option a {
-	padding: 3px 5px 3px 5px;
-}
-.switcher .option a:hover {
-	background: #555;
-	color: #eee;
-}
-.switcher img {
-	position: relative;
-	top: 1px;
-}
+#headerCart span { text-align:right;}
+	
+	
 
 /*** menu ***/
-
-#mainMenu {
-	clear:right;
-	height: 30px;
-	display: inline;
-	float: right;
-	margin: 65px 20px 0 0 ;
+#categoryMenu {
+	position: absolute;
+	bottom: 0px;
+	right: 20px;
 }
-
-#mainMenu a{
+#categoryMenu ul{list-style-type:none;}	
+#categoryMenu li{	
+	float:left;	
+	margin-left: 10px;		
+}
+#categoryMenu a{
+	text-transform: uppercase;
 	font-size: 1.4em;
-	margin-left: 10px;
-	font-weight: bold;
 }
 
 /** SEARCH, currency  **/
@@ -171,32 +133,28 @@ p {
 }
 #content {
 	margin-left: 190px;
-	margin-right: 190px;
+	margin-right: 10px;
 	margin-bottom: 10px;
 }
-#content .top .left {	
-/*	background: url('../image/content_top_left.png') no-repeat; */
-	display: none;
-	background: #222;
+#content .top .left {
+	border-radius: 5px 0 0 0;	
+	background-color: #222;
 	width: 5px;
-	height: 32px;
+	height: 34px;
 	float: left;
 }
 #content .top .right {
-/*	background: url('../image/content_top_right.png') no-repeat; */
-	display: none;
-	background: #222;
-	width: 5px;
-	height: 32px;
+	border-radius: 0 5px 0 0;
+	background-color: #222;	
+	width: 5px;	
+	height: 34px;
 	float: right;
 }
+
 #content .top .center {
-/*	background: url('../image/content_top_center.png') repeat-x; */
-	background: #222;
-	border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
-	-webkit-border-radius: 5px 5px 0 0;
-	
+	background-color: #222;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 #content .top h1, .heading {
 	padding: 8px 0px 8px 7px;
@@ -204,16 +162,13 @@ p {
 #content h1, .heading {
 	color: #fff;
 	font-size: 14px;
-/*	font-family: Arial, Helvetica, sans-serif; */
 	font-weight: bold;
 	text-transform: uppercase;
 	margin: 0px;
 }
 #content .middle {
-	border-radius: 0 0 5px 5px;
-	-moz-border-radius: 0 0 5px 5px;
-	-webkit-border-radius: 0 0 5px 5px;
-	
+	border-radius: 0 0 4px 4px;
+
 	background: #222;
 	padding: 10px 10px 1px 10px;
 	min-height: 30px;
@@ -230,12 +185,9 @@ p {
 	padding: 8px 0px 8px 7px;
 	color: #ddd;
 	font-size: 14px;
-	font-family: Cochin, Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
-/*	background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#222));
-	background: -moz-linear-gradient(top,  #777,  #000);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#777', endColorstr='#000000'); */
+	
 	border-radius: 5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
@@ -256,7 +208,6 @@ p {
 	background: #E4F1C9;
 	border: 1px solid #A5BD71;
 	font-size: 11px;
-	font-family: Cochin, Verdana, Geneva, sans-serif;
 	text-align: center;
 	color: #000;
 }
@@ -266,7 +217,7 @@ p {
 	background: #FFDFE0;
 	border: 1px solid #FF9999;
 	font-size: 11px;
-	font-family: Cochin, Verdana, Geneva, sans-serif;
+
 	text-align: center;
 	color: #000;
 }
@@ -276,7 +227,6 @@ p {
 	background: #FBFAEA;
 	border: 1px solid #EFEBAA;
 	font-size: 11px;
-	font-family: Cochin, Verdana, Geneva, sans-serif;
 	text-align: center;
 }
 .required {
@@ -306,29 +256,23 @@ p {
 	padding-left: 8px;
 	display: inline-block;
 	margin-right: 5px;
-	/*background: url('../image/button_left.png') top left no-repeat;*/
 	text-decoration: none;
 	color:#FFF;
 }
 .button span {
+	background-color:#222;
 	color: #FFF;
 	display: block;
 	padding: 8px;
 	text-transform: uppercase;
-	font-weight:bold;
-/*	background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#222));
-	background: -moz-linear-gradient(top,  #777,  #000);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#777', endColorstr='#000000'); */
-	background: #222;
+	font-weight:bold;	
 	border-radius: 5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
-/*	border: 1px solid #444; */
-	/*background: url('../image/button_right.png') top right no-repeat;*/
+	border: 1px solid #444;
 }
 .button span:hover{
-	background: #333;
-
+	background: #292929;
 }
 
 .buttons {
@@ -368,11 +312,10 @@ p {
 .list td a img {
 	border: 1px solid #666;
 	background-color: #444;
-	padding: 5px;	
+	padding: 2px;	
 }	
 .list td a img:hover {
-	background-color: #666;
-	border: 1px solid #777;
+	border: 1px solid #aaa;
 }
 
 .sort {
@@ -436,8 +379,7 @@ p {
 	display: block;
 	padding: 6px 15px 7px 15px;
 	margin-right: 2px;
-/*	background: #010101 url('../image/tab4.png') repeat-x;	*/
-	background: #333;
+	background-color: #333;	
 	color: #fff;
 	font-weight: bold;
 	font-size: 13px;
@@ -447,8 +389,7 @@ p {
 	top: 1px;
 }
 .tabs a.selected {
-/* 	background: #010101 url('../image/tab4-h.png') repeat-x; */
-	background: #444;
+	background-color: #444;
 	border-bottom: 0px;
 	padding-bottom: 8px;
 	z-index: 3;
@@ -468,9 +409,9 @@ p {
 	padding-top: 5px;
 }
 #footer .div1 {
-	text-align: center;	
-	margin-top: 10px;
-	color: #333;	
+	float: left;
+	text-align: left;	
+	margin-top: 20px;
 }
 #footer .div2 {
 	float: right;

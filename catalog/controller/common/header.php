@@ -1,6 +1,42 @@
 <?php   
 class ControllerCommonHeader extends Controller {
 	protected function index() {
+	
+		/***************** 
+		 * START OF HEADER MODULE MOD 
+		 *****************/		 		 
+		$module_data = array();
+				
+		$this->load->model('checkout/extension');
+
+		$results = $this->model_checkout_extension->getExtensions('module');
+		
+		foreach ($results as $result) {
+			if ($this->config->get($result['key'] . '_status') && $result['key']=="category") {
+				$module_data[] = array(
+					'code'       => $result['key'],
+					'sort_order' => $this->config->get($result['key'] . '_sort_order')
+				);
+				
+				$this->children[] = 'module/' . $result['key'];		
+			}
+		}
+
+		$sort_order = array(); 
+	  
+		foreach ($module_data as $key => $value) {
+      		$sort_order[$key] = $value['sort_order'];
+    	}
+
+    	array_multisort($sort_order, SORT_ASC, $module_data);			
+		
+		$this->data['modules'] = $module_data;
+		
+		/*************** 
+		 * END OF HEADER MODULE MOD 
+		 ****************/
+	
+	
     	if (($this->request->server['REQUEST_METHOD'] == 'POST') && isset($this->request->post['language_code'])) {
 			$this->session->data['language'] = $this->request->post['language_code'];
 		
@@ -79,6 +115,11 @@ class ControllerCommonHeader extends Controller {
 		$this->data['text_keyword'] = $this->language->get('text_keyword');
 		$this->data['text_category'] = $this->language->get('text_category');
 		$this->data['text_advanced'] = $this->language->get('text_advanced');
+		
+ /* CART IN HEADER for OC1.4.9.1 */	
+    	$this->data['text_items_count'] = $this->language->get('text_items_count'); 
+	$this->data['text_subtotal'] = $this->language->get('text_subtotal');
+ /* END */		
 
 		$this->data['entry_search'] = $this->language->get('entry_search');
 		
@@ -94,6 +135,12 @@ class ControllerCommonHeader extends Controller {
 		$this->data['logout'] = HTTP_SERVER . 'index.php?route=account/logout';
     	$this->data['cart'] = HTTP_SERVER . 'index.php?route=checkout/cart';
 		$this->data['checkout'] = HTTPS_SERVER . 'index.php?route=checkout/shipping';
+		
+ /*CART IN HEADER for OC1.4.9.1 */		        
+		$this->data['items_count'] = HTTP_SERVER . 'index.php?route=checkout/cart';
+       		$this->data['subtotal'] = $this->currency->format($this->cart->getTotal());
+		$this->data['ajax'] = $this->config->get('cart_ajax');
+ /* END */			
 		
 		if (isset($this->request->get['keyword'])) {
 			$this->data['keyword'] = $this->request->get['keyword'];

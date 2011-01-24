@@ -18,9 +18,9 @@
       <span style="color: #999; font-size: 11px;"><?php echo $products[$j]['model']; ?></span><br />
       <?php if ($display_price) { ?>
       <?php if (!$products[$j]['special']) { ?>
-      <span style="color: #900; font-weight: bold;"><?php echo $products[$j]['price']; ?></span>
+      <span style="font-weight: bold;"><?php echo $products[$j]['price']; ?></span>
       <?php } else { ?>
-      <span style="color: #900; font-weight: bold; text-decoration: line-through;"><?php echo $products[$j]['price']; ?></span> <span style="color: #F00;"><?php echo $products[$j]['special']; ?></span>
+      <span style="font-weight: bold; text-decoration: line-through;"><?php echo $products[$j]['price']; ?></span> <span style="color: #F00;"><?php echo $products[$j]['special']; ?></span>
       <?php } ?>
       <a class="button_add_small" href="<?php echo $products[$j]['add']; ?>" title="<?php echo $button_add_to_cart; ?>" >&nbsp;</a>
       <?php } ?>

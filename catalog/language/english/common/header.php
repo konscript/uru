@@ -17,4 +17,11 @@ $_['text_category'] = 'All Categories';
 
 // Entry
 $_['entry_search']   = 'Search:';
+
+
+//<===---CART IN HEADER for OC1.4.9.1 Added by Harryo---===>//
+$_['text_items_count'] = 'Items in basket';
+$_['text_subtotal'] = 'Sub-Total:';
+$_['text_empty']    = '0 items';
+//<===---END of Added---===>//
 ?>

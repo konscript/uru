@@ -53,107 +53,29 @@ $(document).ready(function() {
 <body>
 <div id="container">
 <div id="header">
-  <div class="div1">
-    <div class="div2">
+    <div id="logo">
       <?php if ($logo) { ?>
       <a href="<?php echo str_replace('&', '&amp;', $home); ?>"><img src="<?php echo $logo; ?>" title="<?php echo $store; ?>" alt="<?php echo $store; ?>" /></a>
       <?php } ?>
     </div>
-    <div class="div3">
-	      <div class="div7">
-	      	<?php // Disabled the currency picker ?>
-	        <?php if ($currencies == 1337) { ?>
-	        <form action="<?php echo str_replace('&', '&amp;', $action); ?>" method="post" enctype="multipart/form-data" id="currency_form">
-	          <div class="switcher">
-	            <?php foreach ($currencies as $currency) { ?>
-	            <?php if ($currency['code'] == $currency_code) { ?>
-	            <div class="selected"><a><?php echo $currency['title']; ?></a></div>
-	            <?php } ?>
-	            <?php } ?>
-	            <div class="option">
-	              <?php foreach ($currencies as $currency) { ?>
-	              <a onclick="$('input[name=\'currency_code\']').attr('value', '<?php echo $currency['code']; ?>'); $('#currency_form').submit();"><?php echo $currency['title']; ?></a>
-	              <?php } ?>
-	            </div>
-	          </div>
-	          <div style="display: inline;">
-	            <input type="hidden" name="currency_code" value="" />
-	            <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
-	          </div>
-	        </form>
-	        <?php } ?>
-	        <?php // Disabled the language picker ?>
-	        <?php if ($languages == 1337) { ?>
-	        <form action="<?php echo str_replace('&', '&amp;', $action); ?>" method="post" enctype="multipart/form-data" id="language_form">
-	          <div class="switcher">
-	            <?php foreach ($languages as $language) { ?>
-	            <?php if ($language['code'] == $language_code) { ?>
-	            <div class="selected"><a><img src="image/flags/<?php echo $language['image']; ?>" alt="<?php echo $language['name']; ?>" />&nbsp;&nbsp;<?php echo $language['name']; ?></a></div>
-	            <?php } ?>
-	            <?php } ?>
-	            <div class="option">
-	              <?php foreach ($languages as $language) { ?>
-	              <a onclick="$('input[name=\'language_code\']').attr('value', '<?php echo $language['code']; ?>'); $('#language_form').submit();"><img src="image/flags/<?php echo $language['image']; ?>" alt="<?php echo $language['name']; ?>" />&nbsp;&nbsp;<?php echo $language['name']; ?></a>
-	              <?php } ?>
-	            </div>
-	          </div>
-	          <div>
-	            <input type="hidden" name="language_code" value="" />
-	            <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
-	          </div>
-	        </form>
-	        <?php } ?>
-	      </div>     
-    
-    
-        <div id="search">
-          <div class="div8"><?php //echo $entry_search; ?>&nbsp;</div>
-          <div class="div9">
-            <?php if ($keyword) { ?>
-            <input type="text" value="<?php echo $keyword; ?>" id="filter_keyword" />
-            <?php } else { ?>
-            <input type="text" value="<?php echo $text_keyword; ?>" id="filter_keyword" onclick="this.value = '';" onkeydown="this.style.color = '#fff'" style="color: #aaa;" />
-            <?php } ?>
-
-          </div>
-          <div class="div10">&nbsp;&nbsp;<a onclick="moduleSearch();"><img src="catalog/view/theme/konscript/image/search.png"/></a> <a href="<?php echo str_replace('&', '&amp;', $advanced); ?>"></a></div>
-        </div>   
+        	
+	<div id="headerCart">
+		<a href="<?php echo str_replace('&', '&amp;', $cart); ?>">Shopping Cart</a>
+		<?php $itemSuffix = $this->cart->countProducts()==1 ? ' item' : ' items'; ?>
+		<span><?php echo $this->cart->countProducts().$itemSuffix; ?>, total: <?php echo $subtotal; ?></span>				
     </div>    
-    
-<div id="mainMenu">
-	<a href="index.php?route=common/home">Home</a>
-	<a href="index.php?route=account/login">Log in</a>
-	<a href="index.php?route=account/account">Account</a>
-	<a href="index.php?route=checkout/cart">Basket</a>
-	<a href="index.php?route=checkout/shipping">Checkout</a>
-</div>
-
-<?php if (isset($common_error)) { ?>
-	  <div class="warning"><?php echo $common_error; ?></div>
-<?php } ?>
-
-    <div class="div5">    
-     	<?php 
-     		$route = isset($_GET["route"]) ? $_GET["route"] : false;
-			if(!$route || $route=="common/home"){
-			// Disabled the header image slider
-		?>
-<!-- 
-		<div id="slider">
-			<ul>								
-				<li><a href=""><img src="catalog/view/theme/<?php echo $template; ?>/image/diamond7.jpg" alt="Css Template Preview" /></a></li>
-				<li><a href=""><img src="catalog/view/theme/<?php echo $template; ?>/image/diamond.jpg" alt="Css Template Preview" /></a></li>	
-				<li><a href=""><img src="catalog/view/theme/<?php echo $template; ?>/image/diamond6.jpg" alt="Css Template Preview" /></a></li>
-				<li><a href=""><img src="catalog/view/theme/<?php echo $template; ?>/image/diamond4.png" alt="Css Template Preview" /></a></li>			
-				<li><a href=""><img src="catalog/view/theme/<?php echo $template; ?>/image/diamond2.jpg" alt="Css Template Preview" /></a></li>
-				<li><a href=""><img src="catalog/view/theme/<?php echo $template; ?>/image/diamond5.jpg" alt="Css Template Preview" /></a></li>			
-				<li><a href=""><img src="catalog/view/theme/<?php echo $template; ?>/image/diamond3.jpg" alt="Css Template Preview" /></a></li>		
-			</ul>
-		</div>		
--->			
+        
+	<div id="categoryMenu">
+		<?php foreach ($modules as $module) { ?>
+		<?php echo ${$module['code']}; ?>
 		<?php } ?>
-    </div>
-  </div>
+	</div>
+	
+	<?php if (isset($common_error)) { ?>
+		  <div class="warning"><?php echo $common_error; ?></div>
+	<?php } ?>
+
+
 </div>
 <script type="text/javascript"><!--
 $('#search input').keydown(function(e) {

@@ -1,4 +1,6 @@
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
+<?php echo $header; ?>
+	<?php echo $column_left; ?>
+		<?php echo $column_right; ?>
 <div id="content">
   <div class="top">
     <div class="left"></div>
@@ -38,7 +40,8 @@
                 <td><a href="<?php echo str_replace('&', '&amp;', $manufacturers); ?>"><?php echo $manufacturer; ?></a></td>
               </tr>
               <?php } ?>
-              <?php if ($review_status) { ?>
+              <?php if ($review_status) { /*?>
+              
 			  <tr>
                 <td><b><?php echo $text_average; ?></b></td>
                 <td><?php if ($average) { ?>
@@ -47,7 +50,7 @@
                   <?php echo $text_no_rating; ?>
                   <?php } ?></td>
               </tr>
-			  <?php } ?>
+			  <?php */} ?>
             </table>
             <br />
             <?php if ($display_price) { ?>
@@ -110,11 +113,13 @@
     <div class="tabs">
       <a tab="#tab_description"><?php echo $tab_description; ?></a>
       <a tab="#tab_image"><?php echo $tab_image; ?>  (<?php echo count($images); ?>)</a>
-      <?php if ($review_status) { ?><a tab="#tab_review"><?php echo $tab_review; ?></a><?php } ?>
+      <?php if ($review_status) {/* ?><a tab="#tab_review"><?php echo $tab_review; ?></a><?php */} ?>
       <a tab="#tab_related"><?php echo $tab_related; ?> (<?php echo count($products); ?>)</a>
+      <?php ?>
     </div>
     <div id="tab_description" class="tab_page"><?php echo $description; ?></div>
-    <?php if ($review_status) { ?>
+    <?php 
+    if ($review_status) {/* ?>
     <div id="tab_review" class="tab_page">
       <div id="review"></div>
       <div class="heading" id="review_title"><?php echo $text_write; ?></div>
@@ -150,7 +155,7 @@
         </table>
       </div>
     </div>
-    <?php } ?>
+    <?php */} ?>
     <div id="tab_image" class="tab_page">
       <?php if ($images) { ?>
       <div style="display: inline-block;">
@@ -182,9 +187,9 @@
 			<a class="button_add_small" href="<?php echo $products[$j]['add']; ?>" title="<?php echo $button_add_to_cart; ?>" >&nbsp;</a>
             <?php } ?>
             <br />
-            <?php if ($products[$j]['rating']) { ?>
+            <?php if ($products[$j]['rating']) { /*?>
             <img src="catalog/view/theme/default/image/stars_<?php echo $products[$j]['rating'] . '.png'; ?>" alt="<?php echo $products[$j]['stars']; ?>" />
-            <?php } ?>
+            <?php */} ?>
             <?php } ?></td>
           <?php } ?>
         </tr>
