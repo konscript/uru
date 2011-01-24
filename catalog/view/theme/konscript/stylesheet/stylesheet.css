@@ -79,20 +79,29 @@ p {
 	
 	
 
-/*** menu ***/
-#categoryMenu {
+/*** category block ***/
+#category {
 	position: absolute;
 	bottom: 0px;
 	right: 20px;
 }
-#categoryMenu ul{list-style-type:none;}	
-#categoryMenu li{	
-	float:left;	
-	margin-left: 10px;		
-}
-#categoryMenu a{
+#category a{
 	text-transform: uppercase;
 	font-size: 1.4em;
+}
+
+/* information block */
+#information {
+	position: absolute;
+	top: 10px;
+	left: 120px;
+}
+
+/*block shared: information, category*/
+#category ul, #information ul {list-style-type:none;}	
+#category li, #information li{	
+	float:left;	
+	margin-left: 10px;		
 }
 
 /** SEARCH, currency  **/
@@ -132,27 +141,25 @@ p {
 	clear: right;
 }
 #content {
-	margin-left: 190px;
+	margin-left: 10px;
 	margin-right: 10px;
 	margin-bottom: 10px;
 }
 #content .top .left {
 	border-radius: 5px 0 0 0;	
-	background-color: #222;
 	width: 5px;
 	height: 34px;
 	float: left;
 }
 #content .top .right {
 	border-radius: 0 5px 0 0;
-	background-color: #222;	
+
 	width: 5px;	
 	height: 34px;
 	float: right;
 }
 
 #content .top .center {
-	background-color: #222;
 	margin-left: 5px;
 	margin-right: 5px;
 }
@@ -167,9 +174,9 @@ p {
 	margin: 0px;
 }
 #content .middle {
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #444;
 	border-radius: 0 0 4px 4px;
-
-	background: #222;
 	padding: 10px 10px 1px 10px;
 	min-height: 30px;
 }
@@ -186,8 +193,7 @@ p {
 	color: #ddd;
 	font-size: 14px;
 	font-weight: bold;
-	text-transform: uppercase;
-	
+	text-transform: uppercase;	
 	border-radius: 5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
@@ -418,17 +424,7 @@ p {
 	text-align: right;
 	margin-top: 20px;
 }
-#category ul {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-left: 8px;
-	padding-left: 12px;
-	list-style-type: none;
-}
 
-#category li:hover {
-		
-}
 #information ul {
 	margin-top: 0px;
 	margin-bottom: 0px;

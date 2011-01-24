@@ -63,19 +63,14 @@ $(document).ready(function() {
 		<a href="<?php echo str_replace('&', '&amp;', $cart); ?>">Shopping Cart</a>
 		<?php $itemSuffix = $this->cart->countProducts()==1 ? ' item' : ' items'; ?>
 		<span><?php echo $this->cart->countProducts().$itemSuffix; ?>, total: <?php echo $subtotal; ?></span>				
-    </div>    
-        
-	<div id="categoryMenu">
-		<?php foreach ($modules as $module) { ?>
-		<?php echo ${$module['code']}; ?>
-		<?php } ?>
-	</div>
+    </div>          
+	<?php echo $category; ?>	
+	<?php echo $information; ?>
 	
+		
 	<?php if (isset($common_error)) { ?>
 		  <div class="warning"><?php echo $common_error; ?></div>
 	<?php } ?>
-
-
 </div>
 <script type="text/javascript"><!--
 $('#search input').keydown(function(e) {
