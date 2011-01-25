@@ -8,7 +8,7 @@
     </div>
   </div>
   <div class="middle">
-    <table style="padding-bottom:10px;">
+    <table>
 	  <tr>
 	    <?php if ($thumb) { ?>
         <td><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" /></td>	  

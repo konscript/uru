@@ -63,7 +63,7 @@ p {
 	margin-right: 20px; }
 
 #header #logo {
-	padding-top: 15px;
+	padding-top: 10px;
 	padding-left: 30px; }
 
 #headerCart{
@@ -184,9 +184,9 @@ a.current-category {
 	font-weight: bold;
 	text-transform: uppercase;
 	margin: 0px;
+	border-top: 1px solid #444;
 }
 #content .middle {
-	border-top: 1px solid #444;
 	border-bottom: 1px solid #444;
 	border-radius: 0 0 4px 4px;
 	padding: 10px 10px 1px 10px;

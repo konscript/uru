@@ -198,13 +198,16 @@ class ControllerCheckoutCart extends Controller {
 
 			$this->data['totals'] = $total_data;
 			
-			if (isset($this->session->data['redirect'])) {
+/*			if (isset($this->session->data['redirect'])) {
       			$this->data['continue'] = $this->session->data['redirect'];
 				
 				unset($this->session->data['redirect']);
-			} else {
+			} else { 
+*/
 				$this->data['continue'] = HTTP_SERVER . 'index.php?route=common/home';
+/*
 			}
+*/
 			
 			$this->data['checkout'] = HTTPS_SERVER . 'index.php?route=checkout/shipping';
 			
