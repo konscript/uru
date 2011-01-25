@@ -12,7 +12,7 @@ class ControllerCommonHeader extends Controller {
 		$results = $this->model_checkout_extension->getExtensions('module');
 		
 		foreach ($results as $result) {
-			if ($this->config->get($result['key'] . '_status') && $result['key']=="category") {
+			if ($this->config->get($result['key'] . '_status') && ($result['key']=="category" || $result['key']=="information")) {
 				$module_data[] = array(
 					'code'       => $result['key'],
 					'sort_order' => $this->config->get($result['key'] . '_sort_order')

@@ -2,53 +2,53 @@
 '. "\n"; ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="
-<?php echo $direction; ?>" lang="
-<?php echo $lang; ?>" xml:lang="<?php echo $lang; ?>">
-<head>
-<title><?php echo $title; ?></title>
-<?php if ($keywords) { ?>
-<meta name="keywords" content="<?php echo $keywords; ?>" />
-<?php } ?>
-<?php if ($description) { ?>
-<meta name="description" content="<?php echo $description; ?>" />
-<?php } ?>
-<base href="<?php echo $base; ?>" />
-<?php if ($icon) { ?>
-<link href="<?php echo $icon; ?>" rel="icon" />
-<?php } ?>
-<?php foreach ($links as $link) { ?>
-<link href="<?php echo str_replace('&', '&amp;', $link['href']); ?>" rel="<?php echo $link['rel']; ?>" />
-<?php } ?>
-<link rel="stylesheet" type="text/css" href="catalog/view/theme/<?php echo $template; ?>/stylesheet/stylesheet.css" />
-<!--[if lt IE 7]>
-<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/ie6.css" />
-<script type="text/javascript" src="catalog/view/javascript/DD_belatedPNG_0.0.8a-min.js"></script>
-<script>
-DD_belatedPNG.fix('img, #header .div3 a, #content .left, #content .right, .box .top');
-</script>
-<![endif]-->
-<?php foreach ($styles as $style) { ?>
-<link rel="<?php echo $style['rel']; ?>" type="text/css" href="<?php echo $style['href']; ?>" media="<?php echo $style['media']; ?>" />
-<?php } ?>
-<script type="text/javascript" src="catalog/view/javascript/jquery/jquery-1.4.4.min.js"></script>
-<script type="text/javascript" src="catalog/view/javascript/jquery/easySlider1.7.js"></script>
-<link rel="stylesheet" type="text/css" href="catalog/view/theme/<?php echo $template; ?>/stylesheet/easySlider.css" />
-<script type="text/javascript" src="catalog/view/javascript/jquery/thickbox/thickbox-compressed.js"></script>
-<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/thickbox/thickbox.css" />
-<script type="text/javascript" src="catalog/view/javascript/jquery/tab.js"></script>
-<?php foreach ($scripts as $script) { ?>
-<script type="text/javascript" src="<?php echo $script; ?>"></script>
-<?php } ?>
-<script type="text/javascript"><!--
-
-$(document).ready(function() {
-	$("#slider").easySlider({
-		auto: true,
-		continuous: true 
-	});	
-});
-
-//--></script>
+	<?php echo $direction; ?>" lang="
+	<?php echo $lang; ?>" xml:lang="<?php echo $lang; ?>">
+	<head>
+	<title><?php echo $title; ?></title>
+	<?php if ($keywords) { ?>
+	<meta name="keywords" content="<?php echo $keywords; ?>" />
+	<?php } ?>
+	<?php if ($description) { ?>
+	<meta name="description" content="<?php echo $description; ?>" />
+	<?php } ?>
+	<base href="<?php echo $base; ?>" />
+	<?php if ($icon) { ?>
+	<link href="<?php echo $icon; ?>" rel="icon" />
+	<?php } ?>
+	<?php foreach ($links as $link) { ?>
+	<link href="<?php echo str_replace('&', '&amp;', $link['href']); ?>" rel="<?php echo $link['rel']; ?>" />
+	<?php } ?>
+	<link rel="stylesheet" type="text/css" href="catalog/view/theme/<?php echo $template; ?>/stylesheet/stylesheet.css" />
+	<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/ie6.css" />
+	<script type="text/javascript" src="catalog/view/javascript/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script>
+	DD_belatedPNG.fix('img, #header .div3 a, #content .left, #content .right, .box .top');
+	</script>
+	<![endif]-->
+	<?php foreach ($styles as $style) { ?>
+	<link rel="<?php echo $style['rel']; ?>" type="text/css" href="<?php echo $style['href']; ?>" media="<?php echo $style['media']; ?>" />
+	<?php } ?>
+	<script type="text/javascript" src="catalog/view/javascript/jquery/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="catalog/view/javascript/jquery/easySlider1.7.js"></script>
+	<link rel="stylesheet" type="text/css" href="catalog/view/theme/<?php echo $template; ?>/stylesheet/easySlider.css" />
+	<script type="text/javascript" src="catalog/view/javascript/jquery/thickbox/thickbox-compressed.js"></script>
+	<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/thickbox/thickbox.css" />
+	<script type="text/javascript" src="catalog/view/javascript/jquery/tab.js"></script>
+	<?php foreach ($scripts as $script) { ?>
+	<script type="text/javascript" src="<?php echo $script; ?>"></script>
+	<?php } ?>
+	<script type="text/javascript"><!--
+	
+	$(document).ready(function() {
+		$("#slider").easySlider({
+			auto: true,
+			continuous: true 
+		});	
+	});
+	
+	//--></script>
 </head>
 <body>
 <div id="container">
@@ -63,19 +63,14 @@ $(document).ready(function() {
 		<a href="<?php echo str_replace('&', '&amp;', $cart); ?>">Shopping Cart</a>
 		<?php $itemSuffix = $this->cart->countProducts()==1 ? ' item' : ' items'; ?>
 		<span><?php echo $this->cart->countProducts().$itemSuffix; ?>, total: <?php echo $subtotal; ?></span>				
-    </div>    
-        
-	<div id="categoryMenu">
-		<?php foreach ($modules as $module) { ?>
-		<?php echo ${$module['code']}; ?>
-		<?php } ?>
-	</div>
-	
+    </div>
+    
+	<?php echo $category; ?>	
+	<?php echo $information; ?>
+		
 	<?php if (isset($common_error)) { ?>
 		  <div class="warning"><?php echo $common_error; ?></div>
 	<?php } ?>
-
-
 </div>
 <script type="text/javascript"><!--
 $('#search input').keydown(function(e) {

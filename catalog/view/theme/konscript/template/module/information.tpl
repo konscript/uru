@@ -1,6 +1,4 @@
-<div class="box">
-  <div class="top"><?php echo $heading_title; ?></div>
-  <div id="information" class="middle">
+  <div id="information">
     <ul>
       <?php foreach ($informations as $information) { ?>
       <li><a href="<?php echo str_replace('&', '&amp;', $information['href']); ?>"><?php echo $information['title']; ?></a></li>
@@ -9,5 +7,3 @@
       <li><a href="<?php echo str_replace('&', '&amp;', $sitemap); ?>"><?php echo $text_sitemap; ?></a></li>
     </ul>
   </div>
-  <div class="bottom">&nbsp;</div>
-</div>

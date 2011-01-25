@@ -1,1 +1,3 @@
-<?php echo $category; ?>
+<div id="category">
+	<?php echo $category; ?>
+</div>
