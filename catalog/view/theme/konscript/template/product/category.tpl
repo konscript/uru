@@ -10,9 +10,9 @@
   <div class="middle">
     <table>
 	  <tr>
-	    <?php if ($thumb) { ?>
+	    <?php /*if ($thumb) { ?>
         <td><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" /></td>	  
-        <?php } ?>
+        <?php }*/ ?>
         <?php if ($description) { ?>
 	    <td><?php echo $description; ?></td>
 	    <?php } ?>

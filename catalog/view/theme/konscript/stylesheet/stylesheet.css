@@ -437,6 +437,12 @@ a.current-category {
 	text-align: right;
 	margin-top: 20px;
 }
+#footer span {
+	display: block;
+	text-align: center;
+	color: #333;
+	width: 100%;
+}
 
 #information ul {
 	margin-top: 0px;

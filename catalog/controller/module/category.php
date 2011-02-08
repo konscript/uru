@@ -39,7 +39,7 @@ class ControllerModuleCategory extends Controller {
 		
 		if ($results) { 
 			$output .= '<ul>';
-    	}
+    		}
 		
 		foreach ($results as $result) {	
 			if (!$current_path) {
