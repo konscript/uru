@@ -114,7 +114,7 @@
       <a tab="#tab_description"><?php echo $tab_description; ?></a>
       <a tab="#tab_image"><?php echo $tab_image; ?>  (<?php echo count($images); ?>)</a>
       <?php if ($review_status) {/* ?><a tab="#tab_review"><?php echo $tab_review; ?></a><?php */} ?>
-      <a tab="#tab_related"><?php echo $tab_related; ?> (<?php echo count($products); ?>)</a>
+      <a tab="#tab_related" style="display: none"><?php echo $tab_related; ?> (<?php echo count($products); ?>)</a>
       <?php ?>
     </div>
     <div id="tab_description" class="tab_page"><?php echo $description; ?></div>
@@ -168,7 +168,7 @@
       <div style="border: 1px solid #444; padding: 10px; margin-bottom: 10px;"><?php echo $text_no_images; ?></div>
       <?php } ?>
     </div>
-    <div id="tab_related" class="tab_page">
+    <div id="tab_related" class="tab_page" style="display: none">
       <?php if ($products) { ?>
       <table class="list">
         <?php for ($i = 0; $i < sizeof($products); $i = $i + 4) { ?>

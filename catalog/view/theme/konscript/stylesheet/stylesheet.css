@@ -14,7 +14,7 @@ body {
 	color: #fff;
 }
 body, td, th, input, textarea, select, a {
-	font-size: 12px;
+	font-size: 14px;
 }
 form {
 	padding: 0;
@@ -440,9 +440,8 @@ a.current-category {
 #footer span {
 	display: block;
 	text-align: center;
-	color: #333;
-	width: 100%;
-}
+	color: #333; 
+	width: 100%; }
 
 #information ul {
 	margin-top: 0px;
