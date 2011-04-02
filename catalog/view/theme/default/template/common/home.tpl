@@ -1,4 +1,6 @@
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
+<?php
+/*
+ echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="content">
   <?php if ($welcome) { ?>
   <div class="top">
@@ -21,4 +23,6 @@
   <?php echo ${$module['code']}; ?>
   <?php } ?>
 </div>
-<?php echo $footer; ?> 
+<?php echo $footer; 
+*/
+?> 

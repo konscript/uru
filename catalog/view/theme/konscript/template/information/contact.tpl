@@ -15,7 +15,7 @@
             <?php echo $store; ?><br />
             <?php echo $address; ?></div>
           <div style="float: right; display: inline-block; width: 50%;">
-            <?php if ($telephone) { ?>
+            <?php if (!$telephone) { ?>
             <b><?php echo $text_telephone; ?></b><br />
             <?php echo $telephone; ?><br />
             <br />

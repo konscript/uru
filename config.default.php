@@ -1,29 +1,15 @@
 <?php
-if($_SERVER["DOCUMENT_ROOT"]=="/home58a/sub006/sc36854-SDGU/uru.konscript.com"){
-	$_path = "/mounted-storage/home58a/sub006/sc36854-SDGU/uru.konscript.com/";
-	// DB
-	define('DB_DRIVER', 'mysql');
-	define('DB_HOSTNAME', 'mysql1052.servage.net');
-	define('DB_USERNAME', 'uru-oc');
-	define('DB_PASSWORD', 'KonCT01');
-	define('DB_DATABASE', 'uru-oc');
-	define('DB_PREFIX', '');
 
-}elseif($_SERVER["DOCUMENT_ROOT"]=="/var/www/konscript/uru"){
-	$_path = "/home/sqren/Softwareudvikling/konscript/uru/";
+	$_path = "/srv/www/uru/dev/";
 	// DB
 	define('DB_DRIVER', 'mysql');
 	define('DB_HOSTNAME', 'localhost');
-	define('DB_USERNAME', 'root');
-	define('DB_PASSWORD', 'root');
-	define('DB_DATABASE', 'uru_oc');
+	define('DB_USERNAME', '');
+	define('DB_PASSWORD', '');
+	define('DB_DATABASE', '');
 	define('DB_PREFIX', '');
 
-}else{
-	//error!
-	echo 'Dokument root er: '.$_SERVER["DOCUMENT_ROOT"];
-	
-}
+
 
 // DIR
 define('DIR_APPLICATION', $_path.'catalog/');
