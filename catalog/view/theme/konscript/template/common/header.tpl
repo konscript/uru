@@ -65,7 +65,10 @@
 		<span><?php echo $this->cart->countProducts().$itemSuffix; ?>, total: <?php echo $subtotal; ?></span>				
     </div>
     
-	<?php echo $category; ?>	
+	<?php if(isset($_GET["route"]) && $_GET["route"]!="common/home"){
+        	echo $category; 
+    	}
+    ?>	
 	<?php echo $information; ?>
 		
 	<?php if (isset($common_error)) { ?>

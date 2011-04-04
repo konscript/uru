@@ -9,7 +9,7 @@
     <div class="left"></div>
     <div class="right"></div>
     <div class="center">
-      <h1>URU Master Pieces</h1>
+    &nbsp;
     </div>
   </div>
 
@@ -23,7 +23,7 @@
             <?php for ($j = $i; $j < ($i + 4); $j++) { ?>
             <td width="25%"><?php if (isset($categories[$j])) { ?>
               <a href="<?php echo $categories[$j]['href']; ?>"><img src="<?php echo $categories[$j]['thumb']; ?>" title="<?php echo $categories[$j]['name']; ?>" alt="<?php echo $categories[$j]['name']; ?>" style="margin-bottom: 3px;" /></a><br />
-              <a href="<?php echo $categories[$j]['href']; ?>"><?php echo $categories[$j]['name']; ?></a>
+              <a class="productName" href="<?php echo $categories[$j]['href']; ?>"><?php echo $categories[$j]['name']; ?></a>
               <?php } ?></td>
             <?php } ?>
           </tr>

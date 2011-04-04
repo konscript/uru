@@ -156,6 +156,8 @@ a.current-category {
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-bottom: 10px;
+	border-bottom: 1px solid #444;
+	border-top: 1px solid #444;
 }
 #content .top .left {
 	border-radius: 5px 0 0 0;	
@@ -177,17 +179,13 @@ a.current-category {
 }
 #content .top h1, .heading {
 	padding: 12px 0px 8px 7px;
-}
-#content h1, .heading {
 	color: #fff;
 	font-size: 14px;
 	font-weight: bold;
 	text-transform: uppercase;
 	margin: 0px;
-	border-top: 1px solid #444;
 }
 #content .middle {
-	border-bottom: 1px solid #444;
 	border-radius: 0 0 4px 4px;
 	padding: 10px 10px 1px 10px;
 	min-height: 30px;
@@ -336,6 +334,9 @@ a.current-category {
 }	
 .list td a img:hover {
 	border: 1px solid #aaa;
+}
+.list td a.productName{
+    font-size:1.3em;
 }
 
 .sort {
