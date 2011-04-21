@@ -102,7 +102,7 @@ setOption('thumb_crop_height','75',false);
 		<li <?php if ($_zp_gallery_page == "contact.php") { ?>class="active" <?php } ?>><?php printCustomPageURL(gettext('Contact'),"contact"); ?></li>
 		<?php } ?>
 
-<li><a href="shop/" title="Shop">Shop</a></li>
+<li><a href="../shop/" title="Shop">Shop</a></li>
 
 	</ul>	
 </div>
