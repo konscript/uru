@@ -1,0 +1,289 @@
+/* @override http://localhost:8888/dburudiamonds/themes/URUDIAMONDS/css/screen.css */
+
+/* @override http://localhost:8888/dburudiamonds/themes/zpgalleriffic/css/screen.css */
+
+/* @override http://localhost:8888/dburudiamonds/themes/zpgalleriffic/css/screen.css */
+
+/* @override http://localhost:8888/dburudiamonds/themes/zpgalleriffic/css/screen.css */
+
+/* @override http://localhost:8888/dburudiamonds/themes/zpgalleriffic/css/screen.css */
+
+* {padding:0;margin:0;}
+html {margin-bottom:1px!important;height:100%!important;height:auto;}
+.clr{clear:both}
+:focus{outline:none;}
+img,a img{border:0;}
+ul.hor-list,ul.hor-list li{display:inline;margin-left:0!important;}
+body{text-align:center;font-family: Cochin;background-color:#000;color:#bbb;font-size:12px;	line-height:1.4;overflow: -moz-scrollbars-vertical;}
+
+a,a:active{color: #888;text-decoration:none;}
+a:focus,a:hover{text-decoration:underline;}
+h1,h2,h3,h4{margin:0 0 10px 0;color:#ccc;}
+h1{font-size:26px;}
+h2{font-size:22px;}
+h3{font-size:16px;}
+h4{font-size:13px;}
+
+#image-stat h2,table#archive ul.month li a,#navbar,.fadetoggler-exif,.fadetoggler,#news-cat-list a,.newsarticlecredit,#right,#left,.latestnews-cats,.latestnews-date,#pagination,.commentinfo h4,a.commentmeta,#commentcontent h3,div.ss-controls,div.nav-controls,div.pagination a,div#headline h4, div#headline-tags,div.pagination span.current,div.download,div#album-wrap ul li h4,.metadata_title {
+	font-size:12px;text-transform: capitalize;letter-spacing: normal;font-family: Cochin;}
+#main-menu{width:800px;border-bottom:0px solid #000;padding:15px 0 5px 0 ; margin:0 Auto; text-align:right; margin-top:90px;}
+#main-menu ul{margin:10px 0;padding:0;display:inline;}
+#main-menu ul li{margin:0 5px;padding:0;padding-right:10px;display:inline;list-style-type:none;background:none;}
+#main-menu ul li a,#main-menu ul li span{padding:5px 5px;text-transform:;letter-spacing:0px;font-family: Cochin; font-size:1.4em;font-weight: bold;
+-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px; }
+#main-menu ul li a:hover,#main-menu ul li span:hover{background:#4a4a4a;text-decoration:none;cursor:pointer;}
+#main-menu ul li a.active,#main-menu ul li.active a{background: #CCC;color:#fff;font-weight:bold;}
+
+div#page{width:890px;margin:0 auto;text-align:right;}
+div#container{padding:0px 20px 20px 20px;}
+
+#site-title{background: url(../images/banniere1.jpg) no-repeat; width:120px; height: 120px; margin-top:-125px;;}
+#site-title h1 a:hover{text-decoration:none;}
+#site-title h2{line-height:1;margin:0 0 10px 0;padding:0 15px;display:inline;color:#888;font-size:14px;letter-spacing:4px;text-transform:uppercase;background:#000;font-family:cochin;}
+#zplogo{background:#111;}
+
+div#headline{clear:both;margin:10px 0 10px 0;text-align:left;background: url(../images/hr.) repeat-x 0 100%;}
+div#headline h4{padding-bottom:15px;text-align:left;margin-bottom:0;}
+div.headline-text{margin-bottom:5px; text-align:left; font-size:15px; color:#666;}
+div.headline-tags{margin-bottom:5px;}
+
+div#jump-search{float:right;margin:0 0 10px 20px;width:260px;}
+div#jump-search select{float:right;margin-top:8px;}
+div#jump-search select option{padding:0 5px;}
+/* Search Box
+------------------------------ */
+#search {float:right;text-align: left;margin:0;padding:0;position:relative;}
+#search_input{width:125px;float:left;}
+#content3{width:75%;float:right; vertical-align: top;;}
+#content4{width:100%;float:left; height:100%;
+	background: url(../images/URU-Banner1.jpg) no-repeat left top;
+	
+}
+#content5{width:100%;float:left; height:100%;
+	background: url(../images/URU-Banner2.jpg) no-repeat left top;}
+#search input.pushbutton {padding:0;float:left;font-size:80%;}
+#search input.pushbutton:hover {background:#ccc;cursor:pointer;}
+#search a {text-decoration:none;float:left;}
+#search ul {border:1px solid #444;position:absolute;left:0;z-index:1000;text-align:left;list-style:none;margin:3px 0 0 1px;overflow:visible;padding:10px;background-color:#222;}
+#searchfields_icon {position:relative;top:4px;}
+
+#navbar{background:#000 url(../images/hr.gif) repeat-x 0 100%;width:100%;margin:10px 0 2px 0;}
+#navbar a,#navbar span{padding:0 5px;line-height:25px;display:block;}
+#navbar-next{float:right;text-align:right;}
+#navbar-prev{float:left;text-align:left;}
+#navbar-center{text-align:right;
+	text-transform: capitalize;
+	padding-right:45px;
+}
+#navbar span.singlenews_next a,#navbar span.singlenews_prev a{display:inline;}
+
+div#album-wrap ul{margin:10px 0;padding:0;}
+div#album-wrap ul li{width:155px;display:block;float:left;margin:0px 0px 0px 35px;padding:5px;list-style-type:none;background:none;}
+div#album-wrap ul li.lastcol{margin-right:0;}
+div#album-wrap ul li a.album-thumb {padding:2px;display:block;border:1px solid #4a4a4a;}
+div#album-wrap ul li a.album-thumb:focus {outline:none;}
+div#album-wrap ul li a.album-thumb:hover {border:1px solid #ccc;}
+div#album-wrap ul li h4{margin:2px 0 0 0;padding:0; text-align: center;}
+
+div#pagination ul{border:0; margin:5px 0 25px 0 ; padding:0;list-style:none;}
+div#pagination ul li{border:0;margin:0;padding:0;list-style:none;display:block;margin-right:2px;}
+div#pagination ul a,div#pagination ul li.current span{border:solid 1px #222;margin-right:2px;
+-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;}
+div#pagination ul .disabledlink{border:solid 1px #222;display:block;float:right;font-weight:normal;margin-right:2px;padding:3px 4px;
+-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;}
+div#pagination ul li.current a,div#pagination ul li.current span{background: #666;color:#222;font-weight:bold;display:block;float:right;padding:3px 6px;}
+div#pagination ul a:link,div#pagination ul a:visited{color: #666;display:block;float:left;padding:3px 6px;text-decoration:none;}
+div#pagination ul a:hover{color:#fff;}
+
+#home-latestnews{background:url(../images/hr.gif) repeat-x;padding:20px 0 0 0;margin:0;}
+#home-latestnews ul li{list-style:none;margin-bottom:15px;}
+#home-latestnews ul li:last-child{margin-bottom:0;}
+.latestnews-desc{text-align:justify;margin:7px 0 5px 0;}
+.latestnews-cats{font-size:8px;}
+.latestnews-date{margin:-10px 0 0 0;}
+
+#news-cat-list {margin:0!important;padding:0;list-style-image:none;list-style-position:outside;list-style-type:none;}
+#news-cat-list li{margin:2px 0!important;padding:0;}
+#news-cat-list a {letter-spacing:normal;margin:0;padding:3px 8px;text-transform:uppercase;}
+#news-cat-list small{font-size:9px;}
+#news-cat-list .news-cat-active {letter-spacing:normal;text-transform:uppercase;background:#3a3a3a;text-decoration:none;padding:3px 8px!important;
+-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;}
+
+#image-stat{width:100%;margin:20px 0 20px 0;text-align:center;}
+#image-stat h2{background:#000 url(../images/hr.gif) repeat-x 0 100%;padding:0 5px;line-height:25px;display:block;}
+
+#galleriffic-wrap {margin:15px 0 0 0;overflow:hidden;display:none;}
+div.content{display: none;float: right;width: 550px; }
+div.content a,div.navigation a{text-decoration: none;}
+div.content a:focus,div.content a:hover,div.content a:active{text-decoration: underline;}
+div.controls{margin-top: 12px;height:px;}
+div.controls a{padding: 5px;}
+div.ss-controls{float: right;}
+div.nav-controls{float: right;}
+div.slideshow-container {position: relative;clear: both;
+	height: 540px; /* This should be set to be at least the height of the largest image in the slideshow */
+	background:url(../images/hr.) repeat-x;}
+div.loader {position: absolute;top: 0;left: 0;background-image: url(../images/loader.gif);background-repeat: no-repeat;background-position: center;width: 550px;
+	height: 540px; /* This should be set to be at least the height of the largest image in the slideshow */}
+div.slideshow {}
+span.image-wrapper{}
+div.slideshow span.image-wrapper {display: block;position: absolute;top: 0;left: 2;}
+div.slideshow a.advance-link {display: block;width: 550px;
+	height: 540px; /* This should be set to be at least the height of the largest image in the slideshow */
+	line-height: 540px; /* This should be set to be at least the height of the largest image in the slideshow */
+	text-align: center;}
+div.slideshow a.advance-link:focus {outline:none;}
+div.slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.slideshow a.advance-link:visited {text-decoration: none;}
+div.slideshow img {vertical-align: middle;border: 1px solid;border-color: #333;}
+div.detail-download {float:right;font-size:10px;margin-top:3px; margin-left:10px;}
+div.detail-download a,div.nav-controls a,div.ss-controls a {margin-left:0px; margin-right:5px;background: #222;padding:2px 5px;text-transform: capitalize;letter-spacing:0px;font-family: Cochin;
+-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px; }
+div.detail-download a:hover,div.nav-controls a:hover,div.ss-controls a:hover{background: #CCC;color:#fff;text-decoration:none;}
+div.nav-controls a,div.ss-controls a{margin-top:5px;margin-bottom:10px;}
+div.ss-controls a{margin-left:0;}
+div.caption-container {position:relative;height:25px;width: 550px;}
+span.image-caption {position:absolute;top:0;left:0;display: block;width: 550px;height:25px;}
+div.caption {position:absolute;top:0;left:0;height:25px;width: 550px;}
+#galleriffic-wrap div.image-title {font-weight: normal;font-size: 14px;font-style:normal;font-family: Cochin;}
+div.navigation {/* The navigation style is set using jQuery so that the javascript specific styles won't be applied unless javascript is enabled. */}
+div.photo-index {color: black;}
+ul.thumbs,#image-stat ul {clear: both;margin: 0;padding: 0; }
+ul.thumbs li,#image-stat li{float: left;padding: 0;margin: 5px 10px 5px 0;list-style: none;}
+ul#no-gal-ul,#image-stat ul{margin:0 auto 20px auto;text-align:center;width:820px;}
+ul.thumbs li.no-gal-li{}
+a.thumb,#image-stat a {padding: 2px;display: block;border: 1px solid #000; }
+ul.thumbs li.selected a.thumb {background: #fff;}
+a.thumb:focus,#image-stat a:focus {outline: none;}
+a.thumb:hover,#image-stat a:hover {border: 1px solid #000;}
+ul.thumbs img,#image-stat img {border: none;display: block;}
+div.pagination a, div.pagination span.current, div.pagination span.ellipsis {border-color: #4a4a4a;
+-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;}
+div.pagination {clear: both;}
+div.navigation div.top {margin-bottom: 12px;height: 11px;}
+div.navigation div.bottom {padding-top:5px;}
+div.navigation a.prev {}
+div.navigation a.next {}
+div.pagination a, div.pagination span.current, div.pagination span.ellipsis {display: block;float: left;margin-right: 2px;padding: 2px 7px 2px 7px;border: 1px solid #222;}
+div.pagination a:hover {text-decoration: none;background-color: #000;border-color:#ccc;}
+div.pagination span.current {font-weight: bold;background-color: #000;border-color: #222;color: #222;}
+div.pagination span.ellipsis {border: none;padding: 5px 0 3px 2px;}
+
+#image-page{text-align:center;margin:0 auto 30px auto;}
+#image-page table td{vertical-align:top;padding:1px 15px;text-align:center;}
+#image-page .img-title{font-weight:bold;margin:5px 0 10px 0;font-size:15px;letter-spacing:2px;text-transform:uppercase;font-family:verdana,arial,helvetica,sans-serif;}
+#image-page #rating-wrap form{text-align:center;}
+#rating-wrap{margin:0 auto;text-align:center;width:220px;}
+#images-three{clear:both;margin:15px auto 10px auto;}
+#images-three #left{float:right;width:81px;text-align:right;}
+#images-three #right{float:left;width:81px;text-align:left;}
+
+div#post{clear:both;text-align:justify;margin:0 0 20px 0; font-size:14px;}
+div#post p,div#post ul,div#post ol,div#post pre{margin-bottom:15px;}
+div#post ul ul,div#post ol ol{margin-bottom:0;}
+div#post ul,div#post ol{margin-left:25px;}
+div#post blockquote{margin-bottom:15px;font-family:Georgia,Serif;font-size:13px;font-style:italic;}
+
+ul#nav-pages,ul.nav-subpages{list-style:none;display:inline;}
+ul#nav-pages li,ul.nav-subpages li{display:inline;}
+ul#nav-pages li a,ul.nav-subpages li a{margin:0 0 0 5px;padding:0 0 0 10px;display:inline;background:url(../images/hr.gif) repeat-y;}
+ul.nav-subpages li:first-child a{background-image:none!important;}
+ul.nav-subpages li a.subpage-active{text-decoration:underline;}
+
+div.extra-content{width:210px;float:right;margin:0 0 20px 25px;padding-left:25px;background:url(../images/hr.gif) repeat-y;}
+div.newsarticlecredit{margin:-8px 0 10px 0;}
+.zenpage_customimage_right{float:right;margin:0 0 15px 20px;}
+.zenpage_customimage_left{float:left;margin:0 20px 15px 0;}
+
+div#footer {clear:both;margin:15px auto;padding:10px 0 40px;text-align:center;background:url(../images/hr.gif) repeat-x;color: #333;}
+div#footer div{margin:2px 0;}
+#foot-left{float:;}
+
+form td{padding:5px;vertical-align:top;text-align:left;}
+input,textarea,.disabled_input,select {color:#eee!important;font-size:11px;font-weight:normal!important;background:#444!important;border:1px solid #000!important;padding:3px 5px!important;
+-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;}
+input:hover,input:focus,textarea:hover,textarea:focus{border:1px solid #222!important;}
+input.button:hover,input.button:focus,input[type=submit]:hover,input[type=submit]:focus,input[type=reset]:hover,input[type=reset]:focus,#rating input[type=button]:hover,#rating input[type=button]:focus{background:#111!important;color:#ccc!important;cursor:pointer!important;}
+form strong{font-weight:bold;color:red;}
+
+.fadetoggler,.fadetoggler-exif{font-weight:bold;margin:10px 0 15px 0;display:block;}
+.fadetoggler:hover,.fadetoggler-exif:hover{cursor:pointer;}
+
+#comment-wrap h3{display:none;}
+#exif-wrap{margin:-10px 0 0 0;text-align:center;}
+#exif-wrap table{margin:0 auto 10px auto;}
+#comment-wrap{text-align:left;clear:both;margin:0 0 20px 0;padding-top:20px;background:url(../images/hr.gif) repeat-x;}
+#commentcontent,#commententry{text-align:center;}
+#comments{width:425px;float:right;padding-left:35px;background:url(../images/hr.gif) repeat-y;}
+.comment,#showlatestcomments li{margin:10px 0;padding:5px 0;}
+.commentinfo h4{margin-bottom:3px;}
+#commentform {text-align:left;}
+#commentform table td{padding:2px 10px 2px 0;text-align:left;}
+#commentform .pushbutton{margin-top:10px;margin-bottom:15px;}
+#commentform textarea{width:345px;}
+#commentform .inputbox{width:175px;}
+
+
+#admin, #admin_data{position: fixed;right: 0px;top: 0px;width: 120px;border-bottom: 1px solid #444;border-left: 1px solid #444;background: #222;z-index: 2;padding:2px;}
+#admin_data{top: 10px;padding-top: 20px;z-index: 1;line-height: 1.6em;}
+#admin_data ul{padding:5px 0;}
+#admin h3 {font-weight: normal;font-size:13px;margin:0;padding:3px;}
+#admin h3:hover { color: #86a1b6; }
+
+table#archive{margin:0 auto;}
+table#archive td#newsarchive{background:url(../images/hr.gif) repeat-y;}
+table#archive h4{border-bottom:1px solid #666666;padding-bottom:2px;}
+table#archive ul.archive,table#archive ul.month{list-style-type:none;}
+table#archive li.year{font-size:14px;font-weight:bold;margin-top:10px;}
+
+form#mailform{text-align:center;}
+form#mailform table{margin:15px auto;}
+form#mailform table td{text-align:left;}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	text-align: center;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+/*
+    ColorBox Core Style
+    The following rules are the styles that are consistant between themes.
+    Avoid changing this area to maintain compatability with future versions of ColorBox.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative; overflow:visible;}
+#cboxLoadedContent{overflow:auto;}
+#cboxLoadedContent iframe{display:block; width:100%; height:100%; border:0;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+
+/* 
+    ColorBox example user style
+    The following rules are ordered and tabbed in a way that represents the
+    order/nesting of the generated HTML, so that the structure easier to understand.
+*/
+#cboxOverlay{background:#000;}
+#colorbox{}
+    #cboxContent{margin-top:32px;}
+        #cboxLoadedContent{background:#111; padding:1px;}
+        #cboxLoadingGraphic{background:url(../images/loader.gif) center center no-repeat;}
+        #cboxLoadingOverlay{background:#111;}
+        #cboxTitle{position:absolute; top:-22px; left:0; color:#f0f0f0;font-weight:bold;text-transform:uppercase;}
+        #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
+        #cboxSlideshow, #cboxPrevious, #cboxNext, #cboxClose{text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px;}
+		#cboxPrevious{background:url(../images/previous.png) 0 0 no-repeat; right:44px;}      
+        #cboxNext{background:url(../images/next.png) 0 0 no-repeat;right:22px;}   
+        #cboxClose{background:url(../images/close.png) 0 0 no-repeat;right:0;}
+        .cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious{right:66px;}
+        .cboxSlideshow_on #cboxSlideshow{background:url(../images/pause.png) 0 0 no-repeat; right:44px;}
+        .cboxSlideshow_off #cboxSlideshow{background:url(../images/play.png) 0 0 no-repeat; right:44px;} 
+
+		

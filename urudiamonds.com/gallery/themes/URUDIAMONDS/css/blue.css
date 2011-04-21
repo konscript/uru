@@ -1,0 +1,5 @@
+a{color:#00AEEF;}
+#main-menu ul li a.active,#main-menu ul li.active a{background:#00AEEF;}
+div#pagination ul a,div#pagination ul li.current span{border-color:#00AEEF;}
+div#pagination ul li.current a,div#pagination ul li.current span{background:#00AEEF;}
+div.detail-download a:hover,div.nav-controls a:hover,div.ss-controls a:hover{background:#00AEEF;}

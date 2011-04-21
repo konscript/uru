@@ -1,0 +1,85 @@
+/* Light-style css overrides */
+body{background-color:#fff;color:#444;}
+h1,h2,h3,h4{color:#444;}
+#main-menu{background:#eee url(../images/hr2.gif) repeat-x 0 100%;border:0;}
+#main-menu ul li a:hover,#main-menu ul li span:hover{background:#ccc;}
+
+#site-title{background:url(../images/hr2.gif) repeat-x 0 50%;}
+#site-title h1{background:#fff;}
+#site-title h2{color:#888;background:#000;}
+#zplogo{background:#fff;}
+
+div#headline{background:url(../images/hr2.gif) repeat-x 0 100%;}
+
+#search input.pushbutton:hover {background:#ccc;}
+#search ul {border:1px solid #ccc;border-top:1px solid #fff;background-color:#fff;}
+
+#navbar{background:#eee url(../images/hr2.gif) repeat-x 0 100%;}
+#image-stat h2{background:#eee url(../images/hr2.gif) repeat-x 0 100%;}
+
+div#album-wrap ul li a.album-thumb {border-color:#555;}
+div#album-wrap ul li a.album-thumb:hover {border-color:#000;}
+
+div#pagination ul a,div#pagination ul li.current span{border:solid 1px #ccc;}
+div#pagination ul .disabledlink{border:solid 1px #ddd;}
+div#pagination ul a:hover{color:#000;}
+div.detail-download a,div.nav-controls a,div.ss-controls a {background:#eee;}
+
+#home-latestnews{background:url(../images/hr2.gif) repeat-x;}
+#news-cat-list .news-cat-active {background:#f0f0f0;}
+
+div.slideshow-container {background:url(../images/hr2.gif) repeat-x;}
+div.loader {background-image: url(../images/loader2.gif);}
+span.image-wrapper{background:url(../images/hr2.gif) repeat-x bottom;}
+/* stopped editing */
+
+div.slideshow img {border-color: #333;}
+
+a.thumb {border-color:#555;}
+ul.thumbs li.selected a.thumb {background: #000;border-color:#000;}
+a.thumb:hover {border-color:#000;}
+div.pagination a, div.pagination span.current, div.pagination span.ellipsis {border-color: #ccc;}
+div.pagination a:hover {background-color: #fff;border-color:#555;}
+div.pagination span.current {background-color: #fff;border-color: #555;}
+
+ul#nav-pages li a,ul.nav-subpages li a{background:url(../images/hr2.gif) repeat-y;}
+div.extra-content{background:url(../images/hr2.gif) repeat-y;}
+div#footer {background:url(../images/hr2.gif) repeat-x;color: #888;}
+
+input,textarea,.disabled_input,select {color:#444!important;background:#fff!important;border:1px solid #bbb!important;}
+input:hover,input:focus,textarea:hover,textarea:focus{border:1px solid #444!important;}
+input.button:hover,input.button:focus,input[type=submit]:hover,input[type=submit]:focus,input[type=reset]:hover,input[type=reset]:focus,#rating input[type=button]:hover,#rating input[type=button]:focus{background:#f0f0f0!important;color:#444!important;}
+
+#comment-wrap{background:url(../images/hr2.gif) repeat-x;}
+#comments{background:url(../images/hr2.gif) repeat-y;}
+
+#admin, #admin_data{border-color:#ccc;background:#eee;}
+#admin h3:hover { color: #86a1b6; }
+
+table#archive td#newsarchive{background:url(../images/hr2.gif) repeat-y;}
+table#archive h4{border-bottom:1px solid #eee;}
+
+/* 
+    ColorBox example user style
+    The following rules are ordered and tabbed in a way that represents the
+    order/nesting of the generated HTML, so that the structure easier to understand.
+*/
+#cboxOverlay{background:#fff;}
+
+#colorbox{}
+    #cboxContent{margin-top:32px;}
+        #cboxContent{background:#fff; padding:1px;}
+        #cboxLoadingGraphic{background:url(../images/loader.gif) center center no-repeat;}
+        #cboxLoadingOverlay{background:#111;}
+        #cboxTitle{position:absolute; top:-22px; left:0; color:#111;}
+        #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
+        #cboxSlideshow, #cboxPrevious, #cboxNext, #cboxClose{text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px;}
+        #cboxPrevious{background:url(../images/previous.png) 0 0 no-repeat; right:44px;}      
+        #cboxNext{background:url(../images/next.png) 0 0 no-repeat;right:22px;}   
+        #cboxClose{background:url(../images/close2.png) 0 0 no-repeat;right:0;}
+        .cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious{right:66px;}
+        .cboxSlideshow_on #cboxSlideshow{background-position:-75px -25px; right:44px;}
+        .cboxSlideshow_on #cboxSlideshow.hover{background-position:-100px -25px;}
+        .cboxSlideshow_off #cboxSlideshow{background-position:-100px 0px; right:44px;}
+        .cboxSlideshow_off #cboxSlideshow.hover{background-position:-75px -25px;}
+		

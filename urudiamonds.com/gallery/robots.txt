@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /dburudiamonds/albums/
+Disallow: /dburudiamonds/cache/
+Disallow: /dburudiamonds/themes/
+Disallow: /dburudiamonds/zp-core/
+Disallow: /dburudiamonds/zp-data/
+Disallow: /dburudiamonds/page/search/
+Disallow: /dburudiamonds/uploaded/
+Disallow: /dburudiamonds/rss.php
+Disallow: /dburudiamonds/rss-comments.php
+Disallow: /dburudiamonds/README.html
+Disallow: /dburudiamonds/rss-news-comments.php
+Disallow: /dburudiamonds/rss-news.php
