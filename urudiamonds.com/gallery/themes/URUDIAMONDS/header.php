@@ -55,10 +55,11 @@ setOption('thumb_crop_height','75',false);
 		});
 	</script>
 	<?php } ?>	
-    <script type="text/javascript">
+
+<script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-19877873-1']);
+  _gaq.push(['_setAccount', 'UA-18673176-5']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -67,7 +68,7 @@ setOption('thumb_crop_height','75',false);
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>		
+</script>	
 </head>
 
 <body>
