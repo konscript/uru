@@ -26,10 +26,10 @@ SERVER path. For these cases you will need to implement the path overrides below
 // Database Information 
 ////////////////////////////////////////////////////////////////////////////////
 
-$conf['mysql_user'] = 'diamonduru';
-$conf['mysql_pass'] = 'kibotr@de';
+$conf['mysql_user'] = 'konscript';
+$conf['mysql_pass'] = 'KonSQL314';
 $conf['mysql_host'] = 'localhost';
-$conf['mysql_database'] = 'db_urudiamonds';
+$conf['mysql_database'] = 'uru-gallery';
 
 // If you are having problems with displaying some characters you may have to change
 // the following:
